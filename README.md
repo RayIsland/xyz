@@ -28,7 +28,7 @@ selenium
  driver = new ChromeDriver();
  driver.manage().window().maximize();
  Thread.sleep(2000);
- driver.get("https://sauravsarkar-codersarcade.github.io/CA-MVN/"); // "GITHUB-URL here...!!!"
+ driver.get("https://rayisland.github.io/xyz/"); // 
  }
 
  @Test
