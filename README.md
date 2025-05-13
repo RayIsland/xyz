@@ -44,3 +44,34 @@ selenium
  Thread.sleep(1000);
  driver.quit();
  }
+
+4
+ <build>
+ <plugins>
+
+ <plugin>
+ <groupId>org.apache.maven.plugins</groupId>
+ <artifactId>maven-compiler-plugin</artifactId>
+ <version>3.8.1</version>
+ <configuration>
+ <source>1.8</source>
+ <target>1.8</target>
+ </configuration>
+ </plugin>
+ <plugin>
+<groupId>org.apache.maven.plugins</groupId>
+ <artifactId>maven-jar-plugin</artifactId>
+ <version>3.2.0</version>
+ <configuration>
+ <archive>
+ <manifest>
+ <mainClass>com.example.App</mainClass>
+ </manifest>
+ </archive>
+ </configuration>
+ </plugin>
+ </plugins>
+ </build>
+ mvn clean compile
+ mvn package
+ java -jar target\MVNGRDLDEMO-1.0-SNAPSHOT.jar
